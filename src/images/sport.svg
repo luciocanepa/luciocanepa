@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <rect id="Tavola-da-disegno1" serif:id="Tavola da disegno1" x="0" y="0" width="200" height="200" style="fill:none;"/>
+    <g id="Tavola-da-disegno11" serif:id="Tavola da disegno1">
+        <g transform="matrix(0.390623,0,0,0.390623,0,-16.666)">
+            <path d="M509.845,157.312C506.987,152.384 501.717,149.333 496,149.333L149.333,149.333C67.008,149.333 0,216.341 0,298.667C0,380.992 67.008,448 149.333,448C231.659,448 298.667,380.992 298.667,298.667L298.667,261.333C298.667,258.389 301.056,256 304,256L416.192,256C444.821,256 471.445,240.555 485.653,215.68L509.888,173.269C512.725,168.32 512.704,162.219 509.845,157.312ZM149.333,384C102.208,384 64,345.792 64,298.667C64,251.541 102.208,213.333 149.333,213.333C196.459,213.333 234.667,251.541 234.667,298.667C234.667,345.792 196.459,384 149.333,384Z" style="fill:white;fill-rule:nonzero;"/>
+        </g>
+    </g>
+</svg>

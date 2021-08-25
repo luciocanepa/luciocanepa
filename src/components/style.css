@@ -1,0 +1,141 @@
+html, body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+}
+
+.welcome{
+    background: linear-gradient(45deg, rgba(36,143,220,1) 0%, rgba(109,88,200,1) 48%, rgba(255,79,153,1) 100%);
+}
+
+.welcome-photo{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.welcome-photo img{
+    object-fit: contain;
+    width: 75vw;
+    height: fit-content;
+}
+.welcome-text{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffff;
+}
+.welcome-text h1{
+    width: fit-content;
+    height: fit-content;
+    margin: 10vh 0 4vh 0;
+}
+.welcome-text img{
+    width: 1em;
+    height: 1em;
+    object-fit: contain;
+    margin-right: 4vw;
+}
+.welcome-text ul{
+    list-style: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+}
+.welcome-text li{
+    width: fit-content;
+    height: fit-content;
+    margin: 2.5vh;
+
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+}
+
+@media only screen and (min-width: 765px) {
+    .welcome-photo img{
+        width: 55vw;
+    }
+    .welcome-text h1{
+        font-size: 3rem;
+    }
+    .welcome-text img{
+        width: 1.3em;
+        margin-right: 1.3em;
+    }
+    .welcome-text li{
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    .welcome{
+        display: flex;
+        flex-direction: row;
+    }
+    .welcome-photo{
+        width: 40vw;
+        height: 100vh;
+    }
+    .welcome-text{
+        width: 60vw;
+        height: 100vh;
+    }
+    .welcome-photo{
+        align-items: center;
+    }
+    .welcome-photo img{
+        width: 30vw;
+    }
+    .welcome-text{
+        justify-content: space-evenly;
+    }
+    .welcome-text img{
+        width:  1em;
+        margin-right: 1em;
+    }
+    .welcome-text h1{
+        font-size: 3em;
+        margin-bottom: -10vh;
+    }
+    .welcome-text li{
+        font-size: 1em;
+        margin: 5vh;
+    }
+}
+
+@media only screen and (min-width: 1020px) and (orientation: landscape) {
+    .welcome-photo, .welcome-text{
+        width: 50vw;
+    }
+    .welcome-photo img{
+        width: 35vw;
+    }
+    .welcome-text{
+        align-items: flex-start;
+    }
+    .welcome-text h1{
+        font-size: 5em;
+    }
+    .welcome-text li{
+        margin: 5vh 0;
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (min-width: 1500px) and (orientation: landscape) {
+    .welcome-text h1{
+        font-size: 8em;
+        width: 30vw;
+    }
+    .welcome-text img{
+        width: 2em;
+        margin-right: 2em;
+    }
+    .welcome-text li{
+        font-size: 2em;
+    }
+}
