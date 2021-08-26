@@ -133,7 +133,7 @@ html, body{
     }
     .welcome-text img{
         width: 2em;
-        margin-right: 2em;
+        margin-right: 1em;
     }
     .welcome-text li{
         font-size: 2em;
