@@ -33,16 +33,5 @@ module.exports = {
       __key: "images",
     },
     "gatsby-plugin-react-helmet",
-    {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: process.env.API_URL ? './api' : `http://localhost:1337`,
-        queryLimit: 1000,
-        collectionTypes: [
-          "restaurant",
-          "category",
-        ],
-      },
-    },
   ],
 };
