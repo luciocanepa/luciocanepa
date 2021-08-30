@@ -36,7 +36,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: process.env.API_URL ? 'https://luciocanepa.ch/api' : `http://localhost:1337`,
+        apiURL: process.env.API_URL ? './api' : `http://localhost:1337`,
         queryLimit: 1000,
         collectionTypes: [
           "restaurant",
