@@ -1,9 +1,22 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("../components/montserrat.ttf");
+  }
+  @font-face {
+    font-family: Montserrat-Bold;
+    src: url("../components/montserrat-bold.ttf");
+  }
+
+
 html, body{
     width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+    font-family: Montserrat, 'Helvetica', 'Arial', sans-serif;
+}
+h1{
+    font-family: Montserrat-Bold, 'Helvetica', 'Arial', sans-serif;
 }
 
 .welcome{
@@ -18,20 +31,23 @@ html, body{
 }
 .welcome-photo img{
     object-fit: contain;
-    width: 75vw;
-    height: fit-content;
+    width: fit-content;
+    height: 35vh;
 }
 .welcome-text{
     height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     color: #ffff;
 }
 .welcome-text h1{
-    width: fit-content;
+    max-width: 80vw;
     height: fit-content;
-    margin: 10vh 0 4vh 0;
+    margin-bottom: -10vh;
+    font-size: 5vh;
+    text-align: center;
 }
 .welcome-text img{
     width: 1em;
@@ -41,34 +57,21 @@ html, body{
 }
 .welcome-text ul{
     list-style: none;
-    width: fit-content;
-    height: fit-content;
     padding: 0;
+    width: fit-content;
+    max-width: 80vw;
+    height: fit-content;
 }
 .welcome-text li{
     width: fit-content;
     height: fit-content;
-    margin: 2.5vh;
+    margin: 2.5vh 0;
 
     display: flex;
     flex-direction: row;
     place-items: center;
-}
 
-@media only screen and (min-width: 765px) {
-    .welcome-photo img{
-        width: 55vw;
-    }
-    .welcome-text h1{
-        font-size: 3rem;
-    }
-    .welcome-text img{
-        width: 1.3em;
-        margin-right: 1.3em;
-    }
-    .welcome-text li{
-        font-size: 1.3rem;
-    }
+    font-size: 2vh;
 }
 
 @media only screen and (orientation: landscape) {
@@ -77,18 +80,20 @@ html, body{
         flex-direction: row;
     }
     .welcome-photo{
-        width: 40vw;
+        width: 50vw;
         height: 100vh;
-    }
-    .welcome-text{
-        width: 60vw;
-        height: 100vh;
-    }
-    .welcome-photo{
         align-items: center;
     }
+    .welcome-text{
+        width: 45vw;
+        height: 100vh;
+        align-items: flex-start;
+    }
     .welcome-photo img{
-        width: 30vw;
+        max-width: 30vw;
+        height: fit-content;
+        max-height: 90vh;
+        margin: auto;
     }
     .welcome-text{
         justify-content: space-evenly;
@@ -98,44 +103,12 @@ html, body{
         margin-right: 1em;
     }
     .welcome-text h1{
-        font-size: 3em;
-        margin-bottom: -10vh;
+        max-width: 30vw;
+        font-size: 6vw;
+        text-align: left;
     }
     .welcome-text li{
-        font-size: 1em;
-        margin: 5vh;
-    }
-}
-
-@media only screen and (min-width: 1020px) and (orientation: landscape) {
-    .welcome-photo, .welcome-text{
-        width: 50vw;
-    }
-    .welcome-photo img{
-        width: 35vw;
-    }
-    .welcome-text{
-        align-items: flex-start;
-    }
-    .welcome-text h1{
-        font-size: 5em;
-    }
-    .welcome-text li{
+        font-size: 1.5vw;
         margin: 5vh 0;
-        font-size: 1.3em;
-    }
-}
-
-@media only screen and (min-width: 1500px) and (orientation: landscape) {
-    .welcome-text h1{
-        font-size: 8em;
-        width: 30vw;
-    }
-    .welcome-text img{
-        width: 2em;
-        margin-right: 1em;
-    }
-    .welcome-text li{
-        font-size: 2em;
     }
 }

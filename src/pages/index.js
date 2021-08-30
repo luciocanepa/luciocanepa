@@ -1,7 +1,9 @@
 import * as React from "react"
 import {Helmet} from 'react-helmet'
+import { graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
-import avatar from "../images/avatar.png"
+// import avatar from "../images/avatar.png"
 import pc from "../images/pc.svg"
 import uni from "../images/uni.svg"
 import sport from "../images/sport.svg"
@@ -9,7 +11,8 @@ import favicon from "../images/favicon.png"
 
 import "../components/style.css"
 
-const indexPage = () => {
+const indexPage = ({ data }) => {
+  // console.log(data.allStrapiRestaurant.edges[0].node)
   return(
       <div className="welcome">
       <Helmet>
@@ -17,7 +20,7 @@ const indexPage = () => {
         <link rel="icon" href={favicon}/>
       </Helmet>
         <div className="welcome-photo">
-          <img src={avatar}></img>
+          <StaticImage src="../images/avatar.png" alt="avatar image" placeholder="blurred" layout="constrained" />
         </div>
         <div className="welcome-text">
           <h1>Lucio Canepa</h1>
@@ -32,3 +35,17 @@ const indexPage = () => {
 }
 
 export default indexPage
+
+export const query = graphql`
+  query data {
+    allStrapiRestaurant {
+      edges {
+        node {
+          strapiId
+          name
+          description
+        }
+      }
+    }
+  }
+`;

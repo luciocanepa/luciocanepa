@@ -27,11 +27,22 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: "images",
+        path: `${__dirname}/src/images/`,
       },
-      __key: "pages",
+      __key: "images",
     },
     "gatsby-plugin-react-helmet",
+    {
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: `http://localhost:1337`,
+        queryLimit: 1000,
+        collectionTypes: [
+          "restaurant",
+          "category",
+        ],
+      },
+    },
   ],
 };
