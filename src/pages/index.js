@@ -11,8 +11,7 @@ import favicon from "../images/favicon.png"
 
 import "../components/style.css"
 
-const indexPage = ({ data }) => {
-  // console.log(data.allStrapiRestaurant.edges[0].node)
+const indexPage = () => {
   return(
       <div className="welcome">
       <Helmet>
@@ -35,21 +34,6 @@ const indexPage = ({ data }) => {
 }
 
 export default indexPage
-
-export const query = graphql`
-  query data {
-    allStrapiRestaurant {
-      edges {
-        node {
-          strapiId
-          name
-          description
-        }
-      }
-    }
-  }
-`;
-
 
 // {
 //   resolve: `gatsby-source-strapi`,
