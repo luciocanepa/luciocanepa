@@ -1,9 +1,8 @@
 import * as React from "react"
 import {Helmet} from 'react-helmet'
 import { graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-// import avatar from "../images/avatar.png"
 import pc from "../images/pc.svg"
 import uni from "../images/uni.svg"
 import sport from "../images/sport.svg"
@@ -11,7 +10,8 @@ import favicon from "../images/favicon.png"
 
 import "../components/style.css"
 
-const indexPage = () => {
+const indexPage = ({data}) => {
+  const image = getImage(data.avatar)
   return(
       <div className="welcome">
       <Helmet>
@@ -19,7 +19,7 @@ const indexPage = () => {
         <link rel="icon" href={favicon}/>
       </Helmet>
         <div className="welcome-photo">
-          <StaticImage src="../images/avatar.png" alt="avatar image" placeholder="blurred" layout="constrained" />
+          <GatsbyImage image={image} alt="avatar image - Lucio Canepa" />
         </div>
         <div className="welcome-text">
           <h1>Lucio Canepa</h1>
@@ -46,3 +46,18 @@ export default indexPage
 //     ],
 //   },
 // },
+
+
+export const query = graphql `
+{
+  avatar: file(relativePath: {eq: "avatar.png"}) {
+    childImageSharp {
+      gatsbyImageData(
+        placeholder: BLURRED
+        layout: CONSTRAINED
+        transformOptions: {fit: CONTAIN}
+      )
+    }
+  }
+}
+`

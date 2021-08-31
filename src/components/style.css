@@ -22,17 +22,16 @@ h1{
 .welcome{
     background: linear-gradient(45deg, rgba(36,143,220,1) 0%, rgba(109,88,200,1) 48%, rgba(255,79,153,1) 100%);
 }
-
 .welcome-photo{
+    width: 100vw;
     height: 50vh;
     display: flex;
-    justify-content: center;
     align-items: flex-end;
+    justify-content: center;
 }
-.welcome-photo img{
-    object-fit: contain;
-    width: fit-content;
-    height: 35vh;
+.welcome-photo div, .welcome-photo div img{
+    max-width: 80vw;
+    max-height: 45vh;
 }
 .welcome-text{
     height: 50vh;
@@ -82,18 +81,18 @@ h1{
     .welcome-photo{
         width: 50vw;
         height: 100vh;
+        display: flex;
         align-items: center;
+        justify-content: center;
+    }
+    .welcome-photo div, .welcome-photo div img{
+        max-width: 40vw;
+        max-height: 60vh;
     }
     .welcome-text{
         width: 45vw;
         height: 100vh;
         align-items: flex-start;
-    }
-    .welcome-photo img{
-        max-width: 30vw;
-        height: fit-content;
-        max-height: 90vh;
-        margin: auto;
     }
     .welcome-text{
         justify-content: space-evenly;
