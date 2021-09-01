@@ -33,19 +33,6 @@ const indexPage = ({data}) => {
           </ul>
         </div>
       </div>
-      <div className="articles-preview">
-        {articles.map(a=>{
-          console.log(a)
-          return(
-            <div className="article-preview">
-              <h1>{a.metadata.title}</h1>
-              <p>{a.metadata.description}</p>
-              <p>{a.metadata.autohor}</p>
-              <p>{a.metadata.text}</p>
-            </div>
-          )
-        })}
-      </div>
       </div>
   )
 }
@@ -64,15 +51,5 @@ query {
       )
     }
   }
-    articles: allCosmicjsArticles {
-      nodes {
-        metadata {
-          title
-          description
-          author
-          text
-        }
-      }
-    }
   }
 `
