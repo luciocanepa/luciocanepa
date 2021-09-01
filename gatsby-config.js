@@ -20,14 +20,6 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
-      },
-      __key: "images",
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
         path: `${__dirname}/src/images/`,
       },
       __key: "images",
@@ -40,6 +32,17 @@ module.exports = {
           include: /assets/
         }
       }
-    }
+    },
+    {
+      resolve: 'gatsby-source-cosmicjs',
+      options: {
+        bucketSlug: 'swissmetaldetecting-production',
+        objectTypes: ['articles','authors'],
+        apiAccess: {
+          read_key: 'LtDLrcwY3i0DL5lefO19aB6oU8Qu2bqfWhWQdHCu5MPCCAD4Nr',
+          write_key: 'VfcAQoaxRj0SW17u46zoOWPG2oXMDKVrzYFusurRo6RHEQ4YXi',
+        }
+      }
+    },
   ],
 };

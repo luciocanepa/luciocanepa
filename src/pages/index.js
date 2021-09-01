@@ -12,8 +12,10 @@ import favicon from "../images/favicon.png"
 import "../components/style.css"
 
 const indexPage = ({data}) => {
+  const articles = data.articles.nodes
   const image = getImage(data.avatar)
   return(
+    <div className="home">
       <div className="welcome">
       <Helmet>
         <title>luciocanepa</title>
@@ -31,26 +33,28 @@ const indexPage = ({data}) => {
           </ul>
         </div>
       </div>
+      <div className="articles-preview">
+        {articles.map(a=>{
+          console.log(a)
+          return(
+            <div className="article-preview">
+              <h1>{a.metadata.title}</h1>
+              <p>{a.metadata.description}</p>
+              <p>{a.metadata.autohor}</p>
+              <p>{a.metadata.text}</p>
+            </div>
+          )
+        })}
+      </div>
+      </div>
   )
 }
 
 export default indexPage
 
-// {
-//   resolve: `gatsby-source-strapi`,
-//   options: {
-//     apiURL: `http://localhost:1337`,
-//     queryLimit: 1000,
-//     collectionTypes: [
-//       "restaurant",
-//       "category",
-//     ],
-//   },
-// },
-
 
 export const query = graphql `
-{
+query {
   avatar: file(relativePath: {eq: "avatar.png"}) {
     childImageSharp {
       gatsbyImageData(
@@ -60,5 +64,15 @@ export const query = graphql `
       )
     }
   }
-}
+    articles: allCosmicjsArticles {
+      nodes {
+        metadata {
+          title
+          description
+          author
+          text
+        }
+      }
+    }
+  }
 `
