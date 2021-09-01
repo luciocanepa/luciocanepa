@@ -48,7 +48,7 @@ h1{
     font-size: 5vh;
     text-align: center;
 }
-.welcome-text img{
+.welcome-icon{
     width: 1em;
     height: 1em;
     object-fit: contain;
@@ -97,7 +97,7 @@ h1{
     .welcome-text{
         justify-content: space-evenly;
     }
-    .welcome-text img{
+    .welcome-icon{
         width:  1em;
         margin-right: 1em;
     }

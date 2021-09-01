@@ -3,9 +3,10 @@ import {Helmet} from 'react-helmet'
 import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-import pc from "../images/pc.svg"
-import uni from "../images/uni.svg"
-import sport from "../images/sport.svg"
+import Pc from "../assets/pc.svg"
+import Uni from "../assets/uni.svg"
+import Sport from "../assets/sport.svg"
+
 import favicon from "../images/favicon.png"
 
 import "../components/style.css"
@@ -24,9 +25,9 @@ const indexPage = ({data}) => {
         <div className="welcome-text">
           <h1>Lucio Canepa</h1>
           <ul>
-            <li><img src={uni}/> Matematica presso ETH Zürich </li>
-            <li><img src={pc}/> Appassionato di design e informatica </li>
-            <li><img src={sport}/> Sport: corsa e arbitro di calcio </li>
+            <li><Uni className="welcome-icon" /> Matematica presso ETH Zürich </li>
+            <li><Pc className="welcome-icon"/> Appassionato di design e informatica </li>
+            <li><Sport className="welcome-icon"/> Sport: corsa e arbitro di calcio </li>
           </ul>
         </div>
       </div>
@@ -53,7 +54,7 @@ export const query = graphql `
   avatar: file(relativePath: {eq: "avatar.png"}) {
     childImageSharp {
       gatsbyImageData(
-        placeholder: BLURRED
+        placeholder: TRACED_SVG
         layout: CONSTRAINED
         transformOptions: {fit: CONTAIN}
       )
