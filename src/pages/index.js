@@ -12,7 +12,6 @@ import favicon from "../images/favicon.png"
 import "../components/style.css"
 
 const indexPage = ({data}) => {
-  const articles = data.articles.nodes
   const image = getImage(data.avatar)
   return(
     <div className="home">
