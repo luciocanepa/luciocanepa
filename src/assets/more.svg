@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <rect id="Tavola-da-disegno1" serif:id="Tavola da disegno1" x="0" y="0" width="200" height="200" style="fill:none;"/>
+    <clipPath id="_clip1">
+        <rect id="Tavola-da-disegno11" serif:id="Tavola da disegno1" x="0" y="0" width="200" height="200"/>
+    </clipPath>
+    <g clip-path="url(#_clip1)">
+        <g transform="matrix(4.05916,0,0,10.4165,-8676.56,-6566)">
+            <g transform="matrix(3.05081,0,0,1.18886,2130.93,628.077)">
+                <circle cx="10.236" cy="9.983" r="8.075" style="fill:white;"/>
+            </g>
+            <g transform="matrix(1.21322,0,0,1.21322,-461.057,-136.868)">
+                <g transform="matrix(0.593699,0,0,0.231356,875.554,260.435)">
+                    <circle cx="2157.96" cy="1641.87" r="3.02" style="fill:rgb(158,158,158);"/>
+                </g>
+                <g transform="matrix(0.593699,0,0,0.231356,881.019,260.435)">
+                    <circle cx="2157.96" cy="1641.87" r="3.02" style="fill:rgb(158,158,158);"/>
+                </g>
+                <g transform="matrix(0.593699,0,0,0.231356,886.484,260.435)">
+                    <circle cx="2157.96" cy="1641.87" r="3.02" style="fill:rgb(158,158,158);"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

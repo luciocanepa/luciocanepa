@@ -6,8 +6,18 @@
     font-family: Montserrat-Bold;
     src: url("../components/montserrat-bold.ttf");
   }
+  @font-face {
+    font-family: Montserrat-Semibold;
+    src: url("../components/montserrat-semibold.ttf");
+  }
 
-
+* {
+    --color-1: rgba(36,143,220,1);
+    --color-2:  rgba(109,88,200,1);
+    --color-3: rgba(255,79,153,1);
+    --deep-black: rgb(50, 50, 50);
+    --light-gray: rgb(150, 150, 150);
+}
 html, body{
     width: 100vw;
     height: 100vh;
@@ -15,12 +25,19 @@ html, body{
     padding: 0;
     font-family: Montserrat, 'Helvetica', 'Arial', sans-serif;
 }
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
 h1{
     font-family: Montserrat-Bold, 'Helvetica', 'Arial', sans-serif;
 }
 
 .welcome{
-    background: linear-gradient(45deg, rgba(36,143,220,1) 0%, rgba(109,88,200,1) 48%, rgba(255,79,153,1) 100%);
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, var(--color-1) 0%, var(--color-2) 50%, var(--color-3) 100%);
+    z-index: 1;
 }
 .welcome-photo{
     width: 100vw;
@@ -31,7 +48,7 @@ h1{
 }
 .welcome-photo div, .welcome-photo div img{
     max-width: 80vw;
-    max-height: 45vh;
+    max-height: 40vh;
 }
 .welcome-text{
     height: 50vh;
@@ -72,6 +89,105 @@ h1{
 
     font-size: 2vh;
 }
+.skills{
+    width: 80vw;
+    display: grid;
+    margin: 3vh 0 5vh 0;
+    grid-template-areas:
+            "skills"
+            "graphics"
+            "web"
+            "video"
+            "school";
+}
+.skill-right, .skill-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills h1 {
+    background: -webkit-linear-gradient(45deg, var(--color-1) 0%, var(--color-2) 50%, var(--color-3) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4.5vh;
+    width: fit-content;
+    margin: 3vh 0;
+  }
+.skills ul{
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 2vh 0 3vh 0;
+      padding: 0;
+      width: 65vw;
+}
+.skills li{
+    margin: 0.5vh 0;
+    color: var(--deep-black);
+}
+.skill{
+    border-radius: 3vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 2vh 0;
+}
+#skill-title{
+    color: var(--light-gray);
+    font-family: Montserrat-Semibold, 'Helvetica', 'Arial', sans-serif;
+}
+.skill-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 3vh 3vh 0 0;
+}
+.skill-card svg{
+    width: 3vh;
+    height: 3vh;
+    margin: 2vh;
+}
+.skill-card h3{
+    width: 60vw;
+    margin: 0;
+    color: #fff;
+    font-family: Montserrat-Semibold, 'Helvetica', 'Arial', sans-serif;
+    font-weight: 400;
+}
+.text-icon{
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 0;
+}
+.text-icon p{
+    width: 55vw;
+    text-align: left;
+    margin: 2vh 0 0 0;
+}
+.text-icon div{
+    width: 55vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.software-icon{
+    width: 6vh;
+    height: 6vh;
+    filter: drop-shadow( rgba(0, 0, 0, 0.35) 0px 3px 6px);
+}
+#graphics{
+    background: linear-gradient(90deg, var(--color-1) 0%, var(--color-2) 100%);
+}
+#web{
+    background: linear-gradient(90deg, var(--color-2) 0%, var(--color-3) 100%);
+    height: 10vh;
+}
+#video{
+    background: linear-gradient(90deg, var(--color-1) 0%, var(--color-2) 100%);
+}
+#school{
+    background: linear-gradient(90deg, var(--color-2) 0%, var(--color-3) 100%);
+}
 
 @media only screen and (orientation: landscape) {
     .welcome{
@@ -109,5 +225,96 @@ h1{
     .welcome-text li{
         font-size: 1.5vw;
         margin: 5vh 0;
+    }
+    .skills{
+        grid-template-areas:
+            "skills skills"
+            "graphics graphics"
+            "web web"
+            "video school";
+    }
+    .skills h1{
+        font-size: 6vh;
+    }
+    .skills li{
+        margin: 1.5vh 0;
+    }
+    .skill{
+        display: grid;
+        grid-template-columns: 30vw 50vw;
+        grid-template-areas: 
+            "card card"
+            "skill-left skill-right";
+        margin: 4vh 0;
+    }
+    .skill-card{
+        grid-area: card;
+        height: 8vh;
+    }
+    .skill-card svg{
+        margin: 2vh 3vh;
+    }
+    .skill-card h3{
+        width: fit-content;
+    }
+    .skill-left{
+        width: 30vw;
+        grid-area: skill-left;
+    }
+    .skill-right{
+        width: 50vw;
+        grid-area: skill-right;
+    }
+    .skill-left ul{
+        width: 25vw;
+    }
+    .skill-right ul{
+        width: 45vw;
+    }
+    .text-icon{
+        width: 35vw;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .text-icon div{
+        width: 20vw;
+    }
+    .text-icon p{
+        max-width: 10vw;
+        height: fit-content;
+        margin: auto 0;
+    }
+    #video-container, #school-container{
+        width: 35vw;
+        grid-template-areas:
+        "card"
+        "skill-left"
+        "skill-right";
+    }
+    #video-container ul{
+        width: 25vw;
+        margin: 2vh 0;
+        padding: 0;
+    }
+    #video-container li{
+        margin: 0;
+        padding: 0;
+    }
+    #video-container .text-icon p{
+        margin: 3vh 0;
+        min-width: 20vw;
+    }
+    #video-container .skill-right{
+        width: 30vw;
+    }
+    #video-container .text-icon{
+        width: 25vw;
+        flex-direction: column;
+    }
+    #video-container li{
+        margin: 1.5vh 0;
+    }
+    #video, #school{
+        width: 35vw;
     }
 }

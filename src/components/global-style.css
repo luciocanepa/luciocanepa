@@ -1,0 +1,66 @@
+footer{
+    width: 100vw;
+    height: 10vh;
+    background: linear-gradient(45deg, var(--color-1) 0%, var(--color-2) 50%, var(--color-3) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.menu{
+    position: absolute;
+    width: 100vw;
+    height: 8vh;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.menu div{
+    width: fit-content;
+    background-color: #ffffff33;
+    border-radius: 0 0 4vh 4vh;
+    padding: 1vh;
+}
+.menu a {
+    opacity: 0.5;
+    transition: 500ms;
+}
+.menu svg{
+    width: 3.5vh;
+    height: 3.5vh;
+    margin: 1vh 3vh;
+    fill: #ffffff;
+}
+
+@media only screen and (orientation: landscape) {
+    .menu{
+        height: 15vh;
+    }
+    .menu div{
+        border-radius: 5vh;
+        padding: 1vh 3vh;
+        transition: 500ms;
+    }
+    .menu svg{
+        margin: 1vh 3vh;
+        transition: 500ms;
+    }
+    /* .menu div:hover{
+        cursor: pointer;
+        background-color: #ffffff;
+        opacity: 0.8;
+    } */
+    .menu div:hover a:hover{
+        /* cursor: pointer;
+        opacity: 1;
+        fill: var(--color-3); */
+        cursor: pointer;
+        opacity: 1;
+    }
+    /* .menu div:hover svg{
+        fill: var(--color-1);
+    } */
+}

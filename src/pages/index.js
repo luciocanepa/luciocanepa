@@ -3,6 +3,10 @@ import {Helmet} from 'react-helmet'
 import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
+import Menu from "../components/menu.js"
+import Footer from "../components/footer.js"
+import Skills from "../components/skills.js"
+
 import Pc from "../assets/pc.svg"
 import Uni from "../assets/uni.svg"
 import Sport from "../assets/sport.svg"
@@ -15,11 +19,12 @@ const indexPage = ({data}) => {
   const image = getImage(data.avatar)
   return(
     <div className="home">
+      <Menu />
       <div className="welcome">
-      <Helmet>
-        <title>luciocanepa</title>
-        <link rel="icon" href={favicon}/>
-      </Helmet>
+        <Helmet>
+          <title>luciocanepa</title>
+          <link rel="icon" href={favicon}/>
+        </Helmet>
         <div className="welcome-photo">
           <GatsbyImage image={image} alt="avatar image - Lucio Canepa" />
         </div>
@@ -32,7 +37,9 @@ const indexPage = ({data}) => {
           </ul>
         </div>
       </div>
-      </div>
+      <Skills />
+      <Footer />
+    </div>
   )
 }
 

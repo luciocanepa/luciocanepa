@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <rect id="Tavola-da-disegno1" serif:id="Tavola da disegno1" x="0" y="0" width="200" height="200" style="fill:none;"/>
+    <clipPath id="_clip1">
+        <rect id="Tavola-da-disegno11" serif:id="Tavola da disegno1" x="0" y="0" width="200" height="200"/>
+    </clipPath>
+    <g clip-path="url(#_clip1)">
+        <g transform="matrix(0.833333,0,0,0.833333,-6.66667,-0.833333)">
+            <g id="Surfaces">
+                <g id="Publishing_Surface">
+                    <g id="Outline_no_shadow">
+                        <path d="M50.5,4L205.5,4C229,4 248,23 248,46.5L248,195.5C248,219 229,238 205.5,238L50.5,238C27,238 8,219 8,195.5L8,46.5C8,23 27,4 50.5,4Z" style="fill:rgb(73,2,31);fill-rule:nonzero;"/>
+                    </g>
+                </g>
+            </g>
+            <g id="Outlined_Mnemonics_Logos">
+                <g id="Id">
+                    <path d="M95.2,65.2L95.2,167.8C95.2,168.9 94.7,169.4 93.8,169.4L74.2,169.4C73.3,169.4 72.9,168.9 72.9,167.8L72.9,65.2C72.9,64.3 73.4,63.9 74.3,63.9L93.8,63.9C94.4,63.8 95,64.2 95.1,64.9C95.2,65 95.2,65.1 95.2,65.2Z" style="fill:rgb(255,51,102);fill-rule:nonzero;"/>
+                    <path d="M152.8,171C145.4,171.1 138,169.6 131.3,166.5C125,163.6 119.8,158.8 116.2,152.9C112.5,146.8 110.7,139.2 110.7,130.1C110.6,122.7 112.5,115.4 116.2,109C120,102.5 125.5,97.1 132.1,93.5C139.1,89.6 147.5,87.7 157.4,87.7C157.9,87.7 158.6,87.7 159.5,87.8C160.4,87.9 161.4,87.9 162.6,88L162.6,56.4C162.6,55.7 162.9,55.3 163.6,55.3L183.9,55.3C184.4,55.2 184.8,55.6 184.9,56L184.9,151.4C184.9,153.2 185,155.2 185.1,157.4C185.3,159.5 185.4,161.5 185.5,163.2C185.5,163.9 185.2,164.5 184.5,164.8C179.3,167 173.8,168.6 168.2,169.6C163.2,170.5 158,171 152.8,171ZM162.6,151L162.6,107C161.7,106.8 160.8,106.6 159.9,106.5C158.8,106.4 157.7,106.3 156.6,106.3C152.7,106.3 148.8,107.1 145.3,108.9C141.9,110.6 139,113.1 136.8,116.3C134.6,119.5 133.5,123.8 133.5,129C133.4,132.5 134,136 135.2,139.3C136.2,142 137.7,144.4 139.7,146.4C141.6,148.2 143.9,149.6 146.5,150.4C149.2,151.3 152,151.7 154.8,151.7C156.3,151.7 157.7,151.6 159,151.5C160.3,151.6 161.5,151.4 162.6,151Z" style="fill:rgb(255,51,102);fill-rule:nonzero;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
