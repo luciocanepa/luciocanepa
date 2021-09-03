@@ -1,6 +1,5 @@
 import * as React from "react"
 import Menu from "../components/menu.js"
-import Footer from "../components/footer.js"
 
 import "../components/contact.css"
 
@@ -36,18 +35,3 @@ const Contact = () => {
 }
 
 export default Contact
-
-
-export const query = graphql `
-query {
-  profile: file(relativePath: {eq: "profile.svg"}) {
-    childImageSharp {
-      gatsbyImageData(
-        placeholder: TRACED_SVG
-        layout: CONSTRAINED
-        transformOptions: {fit: CONTAIN}
-      )
-    }
-  }
-  }
-`
