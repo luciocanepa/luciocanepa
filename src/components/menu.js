@@ -7,7 +7,6 @@ import Phone from "../assets/phone.svg"
 import "./global-style.css"
 
 const Menu = () => {
-    console.log()
     return(
         <div className="menu">
             <div>

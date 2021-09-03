@@ -19,6 +19,18 @@
 .contact-card a{
     color: var(--deep-black);
     text-decoration: none;
+    transition: 500ms;
+}
+#contact-name:hover{
+    background-color: #ffffff;
+}
+.contact li:hover{
+    background-color:rgba(109,88,200, 0.2);
+}
+.contact li:hover a, .contact li:hover svg{
+    cursor: pointer;
+    color: var(--color-2);
+    fill: var(--color-2);
 }
 .contact-box{
     width: 85vw;
@@ -35,13 +47,14 @@
     position: absolute;
     width: 10vh;
     height: 10vh;
-    margin: -65vh auto 0 auto;
+    top: 20vh;
 }
 .contact-card svg{
     width: 2vh;
     height: 2vh;
     fill: var(--deep-black);
     margin-right: 1vh;
+    transition: 500ms;
 }
 .contact ul{
     list-style: none;
@@ -53,10 +66,13 @@
     align-items: center;
 }
 .contact li{
-    margin: 2vh 0;
+    margin: 1vh 0;
+    padding: 1vh 1vh;
+    border-radius: 5vh;
     display: flex;
     flex-direction: row;
     align-items: center;
+    transition: 500ms;
 }
 .contact-box p{
     color: var(--light-gray);
@@ -67,6 +83,5 @@
     .contact-box{
         width: 30vw;
         height: 65vh;
-        /* flex-direction: row; */
     }
 }

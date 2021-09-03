@@ -12,15 +12,16 @@
   }
 
 * {
-    --color-1: rgba(36,143,220,1);
-    --color-2:  rgba(109,88,200,1);
-    --color-3: rgba(255,79,153,1);
+    --color-1: rgb(36,143,220);
+    --color-2:  rgb(109,88,200);
+    --color-3: rgb(255,79,153);
     --deep-black: rgb(50, 50, 50);
     --light-gray: rgb(150, 150, 150);
 }
-html, body{
+html{
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     font-family: Montserrat, 'Helvetica', 'Arial', sans-serif;
