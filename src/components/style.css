@@ -91,11 +91,11 @@ h1{
     font-size: 2vh;
 }
 .down-arrow{
-    position: absolute;
+    position: relative;
     width: 7vw;
     height: 7vw;
     left: 46.5vw;
-    bottom: 3vh;
+    bottom: 6vh;
 }
 .down-arrow svg{
     fill: #ffffff;
