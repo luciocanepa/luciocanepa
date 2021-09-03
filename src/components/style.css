@@ -90,6 +90,17 @@ h1{
 
     font-size: 2vh;
 }
+.down-arrow{
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    left: 46.5vw;
+    bottom: 3vh;
+}
+.down-arrow svg{
+    fill: #ffffff;
+    opacity: 0.2;
+}
 .skills{
     width: 80vw;
     display: grid;
@@ -226,6 +237,17 @@ h1{
     .welcome-text li{
         font-size: 1.5vw;
         margin: 5vh 0;
+    }
+    .down-arrow{
+        position: absolute;
+        width: 2vw;
+        height: 2vw;
+        left: 49vw;
+        bottom: 2vw;
+    }
+    .down-arrow svg{
+        fill: #ffffff;
+        opacity: 0.2;
     }
     .skills{
         grid-template-areas:

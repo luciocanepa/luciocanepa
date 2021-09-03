@@ -11,6 +11,8 @@ import Pc from "../assets/pc.svg"
 import Uni from "../assets/uni.svg"
 import Sport from "../assets/sport.svg"
 
+import Continue from "../assets/down-arrow.svg"
+
 import favicon from "../images/favicon.png"
 
 import "../components/style.css"
@@ -35,6 +37,9 @@ const indexPage = ({data}) => {
             <li><Pc className="welcome-icon"/> Appassionato di design e informatica </li>
             <li><Sport className="welcome-icon"/> Sport: corsa e arbitro di calcio </li>
           </ul>
+        </div>
+        <div className="down-arrow">
+          <Continue />
         </div>
       </div>
       <Skills />
