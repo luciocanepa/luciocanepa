@@ -29,20 +29,20 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /assets/
-        }
-      }
+          include: /assets/,
+        },
+      },
     },
     {
-      resolve: 'gatsby-source-cosmicjs',
+      resolve: "gatsby-source-cosmicjs",
       options: {
-        bucketSlug: 'swissmetaldetecting-production',
-        objectTypes: ['articles','authors'],
+        bucketSlug: "luciocanepa-portfolio",
+        objectTypes: ["works", "partners"],
         apiAccess: {
-          read_key: 'LtDLrcwY3i0DL5lefO19aB6oU8Qu2bqfWhWQdHCu5MPCCAD4Nr',
-          write_key: 'VfcAQoaxRj0SW17u46zoOWPG2oXMDKVrzYFusurRo6RHEQ4YXi',
-        }
-      }
+          read_key: "qEM2JHgxYHTtic1jzWW2XPevWjyMEzaH1ucn948TK3rcX6dvAn",
+          write_key: "ew2k24UZTMe9xQMKVhCPcnV6WsBZLEGw7wueLe0lRCAbwBDTnk",
+        },
+      },
     },
   ],
 };

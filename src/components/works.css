@@ -1,0 +1,138 @@
+.work a {
+  color: var(--color-2);
+  transition: 300ms;
+}
+.work a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.work {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-title {
+  width: 100vw;
+  height: fit-content;
+  background: linear-gradient(
+    45deg,
+    var(--color-1) 0%,
+    var(--color-2) 50%,
+    var(--color-3) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.work-title h1 {
+  color: #ffffff;
+  width: 90vw;
+  margin-top: 10vh;
+  padding: 2vh;
+  font-size: 6vh;
+}
+
+.work-info {
+  width: 90vw;
+  height: fit-content;
+  color: var(--light-gray);
+  padding: 2vh 0 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.work-info svg {
+  width: 2vh;
+  height: 2vh;
+  fill: var(--light-gray);
+  padding: 0 1vh 0 0;
+}
+
+.work-main,
+.work-body {
+  width: 90vw;
+  height: fit-content;
+  line-height: 3vh;
+  padding: 2vh 0;
+}
+.work-body p {
+  margin: 2vh 0;
+}
+.work-content {
+  width: 90vw;
+  height: fit-content;
+}
+
+.work-links {
+  width: 90vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 3vh;
+  margin: 2vh 0;
+}
+.work-links ul {
+  list-style: none;
+  width: 70vw;
+  padding: 5vw;
+}
+.work-links li {
+  margin: 1vh 0;
+}
+.work-links a {
+  color: var(--color-2);
+}
+video {
+  width: 80vw !important;
+}
+
+@media only screen and (orientation: landscape) {
+  .work-title h1 {
+    width: 80vw;
+    margin-top: 20vh;
+    font-size: 6vh;
+  }
+  .work-info,
+  .work-main,
+  .work-content {
+    width: 80vw;
+  }
+  .work-info {
+    padding: 4vh 0 2vh 0;
+  }
+  .work-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 3vh 0;
+  }
+  .work-body,
+  .work-body p {
+    width: 50vw;
+  }
+  .work-links {
+    width: 25vw;
+  }
+
+  .work-links ul {
+    width: 25vw;
+    padding: 2vh 0 2vh 4vh;
+  }
+  .work-links li {
+    width: 20vw;
+  }
+  .work-links a {
+    max-width: 20vw;
+  }
+  .work-body ul {
+    list-style: inside circle;
+    padding-left: 1vw;
+  }
+  .work-body img {
+    width: 30vw !important;
+    margin: 2vh 10vw;
+  }
+}

@@ -1,87 +1,97 @@
-*, html{
-    margin: 0;
-    padding: 0;
+*,
+html {
+  margin: 0;
+  padding: 0;
 }
-.contact{
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(45deg, var(--color-1) 0%, var(--color-2) 50%, var(--color-3) 100%);
+.contact {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    45deg,
+    var(--color-1) 0%,
+    var(--color-2) 50%,
+    var(--color-3) 100%
+  );
+}
+.contact p {
+  width: fit-content;
 }
 
-.contact-card{
-    padding-top: 15vh;
-    height: 85vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contact-card {
+  padding-top: 15vh;
+  height: 85vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.contact-card a{
-    color: var(--deep-black);
-    text-decoration: none;
-    transition: 500ms;
+.contact-card a {
+  color: var(--deep-black);
+  text-decoration: none;
+  transition: 500ms;
 }
-#contact-name:hover{
-    background-color: #ffffff;
+#contact-name:hover {
+  background-color: #ffffff;
 }
-.contact li:hover{
-    background-color:rgba(109,88,200, 0.2);
+.contact li:hover {
+  background-color: rgba(109, 88, 200, 0.2);
 }
-.contact li:hover a, .contact li:hover svg{
-    cursor: pointer;
-    color: var(--color-2);
-    fill: var(--color-2);
+.contact li:hover a,
+.contact li:hover svg {
+  cursor: pointer;
+  color: var(--color-2);
+  fill: var(--color-2);
 }
-.contact-box{
-    width: 85vw;
-    height: 65vh;
-    background-color: #ffffff;
-    border-radius: 10vh;
+.contact-box {
+  width: 85vw;
+  height: 65vh;
+  background-color: #ffffff;
+  border-radius: 10vh;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-#profile-picture{
-    position: absolute;
-    width: 10vh;
-    height: 10vh;
-    top: 20vh;
+#profile-picture {
+  position: absolute;
+  width: 10vh;
+  height: 10vh;
+  top: 20vh;
 }
-.contact-card svg{
-    width: 2vh;
-    height: 2vh;
-    fill: var(--deep-black);
-    margin-right: 1vh;
-    transition: 500ms;
+.contact-card svg {
+  width: 2vh;
+  height: 2vh;
+  fill: var(--deep-black);
+  margin-right: 1vh;
+  transition: 500ms;
 }
-.contact ul{
-    list-style: none;
-    width: 80vw;
-    height: 20vh;
-    margin: 5vh 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contact ul {
+  list-style: none;
+  width: 80vw;
+  height: 20vh;
+  margin: 5vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.contact li{
-    margin: 1vh 0;
-    padding: 1vh 1vh;
-    border-radius: 5vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    transition: 500ms;
+.contact li {
+  margin: 1vh 0;
+  padding: 1vh 1vh;
+  border-radius: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: 500ms;
 }
-.contact-box p{
-    color: var(--light-gray);
-    letter-spacing: -4px;
+.contact-box p {
+  color: var(--light-gray);
+  letter-spacing: -4px;
 }
 
 @media only screen and (orientation: landscape) {
-    .contact-box{
-        width: 30vw;
-        height: 65vh;
-    }
+  .contact-box {
+    width: 30vw;
+    height: 65vh;
+  }
 }
